@@ -1,6 +1,6 @@
-# LowVim
+# init.lua
 
-![image](./.assets/neovim.jpg)
+![image](https://raw.githubusercontent.com/neovim/neovim.github.io/master/static/logos/neovim-logo-300x87.png)
 
 ## Table of content
 
@@ -39,23 +39,12 @@
 > [!Note]
 > Use your plugin manager.
 
-### Lazy
-
 ```lua
 {
-  "MikeHorn-git/LowVim",
+  "MikeHorn-git/init.lua",
   lazy = false,
   import = "lowvim.plugins",
 },
-```
-
-## Test
-
-> [!Note]
-> Use [devenv](https://devenv.sh/).
-
-```bash
-devenv shell
 ```
 
 ## Credits

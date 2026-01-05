@@ -32,42 +32,42 @@ return {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" },
-    config = function() require "lowvim.configs.harpoon" end,
+    config = function() require "init.configs.harpoon" end,
   },
 
   {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = function() return require "lowvim.configs.lualine" end,
+    opts = function() return require "init.configs.lualine" end,
   },
 
   {
     "nvim-treesitter/nvim-treesitter",
     branch = "master",
     build = ":TSUpdate",
-    opts = function() return require "lowvim.configs.treesitter" end,
+    opts = function() return require "init.configs.treesitter" end,
   },
 
   {
     "mason-org/mason.nvim",
-    opts = function() return require "lowvim.configs.mason" end,
+    opts = function() return require "init.configs.mason" end,
   },
 
   {
     "williamboman/mason-lspconfig.nvim",
-    opts = function() return require "lowvim.configs.mason_lspconfig" end,
+    opts = function() return require "init.configs.mason_lspconfig" end,
   },
 
   {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = function() return require "lowvim.configs.trouble" end,
+    opts = function() return require "init.configs.trouble" end,
   },
 
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
-    opts = function() return require "lowvim.configs.which_key" end,
+    opts = function() return require "init.configs.which_key" end,
   },
 
   {
@@ -76,14 +76,14 @@ return {
       "mfussenegger/nvim-dap",
       "nvim-neotest/nvim-nio",
     },
-    config = function() require "lowvim.configs.dapui" end,
+    config = function() require "init.configs.dapui" end,
   },
 
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.8",
     dependencies = { "nvim-lua/plenary.nvim" },
-    config = function() require "lowvim.configs.telescope" end,
+    config = function() require "init.configs.telescope" end,
   },
 
   -- === Core editor / LSP / completion ===

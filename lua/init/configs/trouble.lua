@@ -1,4 +1,4 @@
-require "lowvim.diagnostics"
+require "init.diagnostics"
 require("trouble").setup {
   {
     icons = false,
