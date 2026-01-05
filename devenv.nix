@@ -27,7 +27,7 @@
   '';
 
   # https://devenv.sh/tasks/
-  tasks = {
+  scripts = {
     "lint:run".exec = ''
       mdformat README.md
       nixfmt devenv.nix

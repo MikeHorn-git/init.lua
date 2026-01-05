@@ -43,7 +43,7 @@
 {
   "MikeHorn-git/init.lua",
   lazy = false,
-  import = "lowvim.plugins",
+  import = "init.plugins",
 },
 ```
 

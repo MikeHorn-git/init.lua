@@ -18,15 +18,15 @@ vim.opt.rtp:prepend(lazypath)
 -- Lazy.nvim setup
 require("lazy").setup {
   {
-    "MikeHorn-git/LowVim",
+    "MikeHorn-git/init.lua",
     lazy = false,
-    import = "lowvim.plugins",
+    import = "init.plugins",
   },
 }
 
 -- Load core modules
-require "lowvim.options"
-require "lowvim.autocmds"
-require "lowvim.keymaps"
-require "lowvim.diagnostics"
-require "lowvim.lsp"
+require "init.options"
+require "init.autocmds"
+require "init.keymaps"
+require "init.diagnostics"
+require "init.lsp"
