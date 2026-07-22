@@ -2,28 +2,13 @@
 
 {
   # https://devenv.sh/packages/
-  packages = with pkgs; [ git neovim stylua unixtools.xxd unzip ];
+  packages = with pkgs; [
+    git
+    neovim
+  ];
 
   # https://devenv.sh/languages/
   languages.lua.enable = true;
-  languages.rust.enable = true;
-
-  # https://devenv.sh/scripts/
-  scripts = {
-    "test:run".exec = ''
-      XDG_CONFIG_HOME=$(pwd)/.config \
-      XDG_DATA_HOME=$(pwd)/.data \
-      nvim -u ./test/init.lua
-    '';
-    "clean:run".exec = "rm -rf .config .data";
-  };
-
-  # https://devenv.sh/basics/
-  enterShell = ''
-    echo "Available commands:"
-    echo " - test         : Launch neovim with config"
-    echo " - clean        : Remove .config .data"
-  '';
 
   # https://devenv.sh/tests/
   enterTest = ''
@@ -34,7 +19,7 @@
   git-hooks.hooks = {
     luacheck.enable = true;
     mdformat.enable = true;
-    nixfmt-classic.enable = true;
+    nixfmt.enable = true;
     selene.enable = true;
     stylua.enable = true;
   };
