@@ -4,16 +4,10 @@
   # https://devenv.sh/packages/
   packages = with pkgs; [
     git
-    neovim
   ];
 
   # https://devenv.sh/languages/
   languages.lua.enable = true;
-
-  # https://devenv.sh/tests/
-  enterTest = ''
-    nvim -v
-  '';
 
   # https://devenv.sh/git-hooks/
   git-hooks.hooks = {
